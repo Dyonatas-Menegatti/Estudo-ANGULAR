@@ -1,0 +1,27 @@
+<p [ngClass]="estilo">comp-atributos works!</p>
+<button (click)="trocar()">CHANGE</button>
+<h1 [ngStyle]="{'background': corfundo, 'color': corDafonte}">Curso Angular</h1>
+
+<h1>Lista de compras</h1>
+<p>Adicionar item:</p>
+<input type="text" [(ngModel)]="item">
+<button (click)="adicionarLista()">Adicionar</button>
+<p>{{ item }}</p>
+
+<ul>
+  @for (elemento of lista; track $index) {
+    <li>{{ elemento }}</li>
+  }
+</ul>
+<!-- NÃO CONSEGUI REALIZAR DE FORMA CORRETA -->
+<hr>
+  <ng-template #isEnableBlock>
+    <a href="#">FINALIZAR COMPRA</a>
+  </ng-template>
+  <ng-content *ngTemplateOutlet="isEnableBlock"></ng-content>
+  <p>tem algo aqui!</p>
+  <ng-template #EnableBlock>
+    <a href="#">ADICIONAR NO CARRINHO</a>
+  </ng-template>
+  <ng-content *ngTemplateOutlet="EnableBlock"></ng-content>
+<hr>

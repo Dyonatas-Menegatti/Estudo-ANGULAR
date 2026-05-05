@@ -1,0 +1,38 @@
+<h1>My Card</h1>
+<p>card works!</p>
+<button>Delete Card</button>
+<ul>
+  @for (produto of produtos; track $index; let i = $index) {
+    <li (click)="remover(i)"> {{ i }}: {{ produto }}</li>
+  }
+  <button (click)="adicionar()">Adicionar</button>
+</ul>
+@switch (menuType) {
+  @default {
+    <div>
+      <ul>
+        <li> Editar Perfil</li>
+        <li> Adicionar Cartão</li>
+      </ul>
+    </div>
+  }
+  @case ('admin') {
+    <div>
+      <ul>
+        <li> Editar Perfil</li>
+        <li> Adicionar Cartão</li>
+        <li> Gerenciar Usuários</li>
+      </ul>
+    </div>
+  }
+  @case ('superuser') {
+    <div>
+      <ul>
+        <li> Editar Perfil</li>
+        <li> Adicionar Cartão</li>
+        <li> Gerenciar Usuários</li>
+        <li> Gerenciar Admins</li>
+      </ul>
+    </div>
+  }
+}
