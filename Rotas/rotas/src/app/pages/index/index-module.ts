@@ -1,0 +1,10 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+// NÃO Ã‰ NECESSÃRIO IMPORTAR O COMPONENTE AQUI, POIS ELE JÃ ESTÃ SENDO IMPORTADO NO APP.ROUTES.TS
+// ANGULAR V21 MUDOU ISSO, ANTES ERA NECESSÃRIO IMPORTAR O COMPONENTE AQUI PARA QUE ELE FOSSE RECONHECIDO PELO ANGULAR, MAS AGORA COM O V21 ISSO NÃO Ã MAIS NECESSÃRIO, POIS O ANGULAR JÃ RECONHECE O COMPONENTE PELO APP.ROUTES.TS
+@NgModule({
+  declarations: [],
+  imports: [CommonModule],
+})
+export class IndexModule {}
