@@ -1,0 +1,15 @@
+<input type="text" placeholder="Procure seu Pokemon" (keyup.enter)="getPokemon($event.target.value)">
+
+<div class="card">
+  <div class="card__title">
+    <h3>{{pokemon.name}}</h3>
+  </div>
+  <div class="card__body">
+    <img src="{{pokemon.sprites.front_default}}" alt="pokemon" srcset="">
+  </div>
+  <div class="card__stats">
+    @for ( t of pokemon.types; track t) {
+      <span class="card__stats__type" >{{t.type.name}}</span>
+    }
+  </div>
+</div>
