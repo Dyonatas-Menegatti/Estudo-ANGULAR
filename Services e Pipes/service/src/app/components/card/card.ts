@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon-service';
 import { PokemonData } from '../../models/pokemonData';
+import { TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { TransformadorPipe } from "../../pipes/transformador-pipe";
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [UpperCasePipe, TitleCasePipe, TransformadorPipe],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
 export class Card implements OnInit {
+
 
   pokemon: PokemonData;
 
@@ -22,7 +25,7 @@ export class Card implements OnInit {
    }
 
   ngOnInit(): void {
-    this.getPokemon('pikachu')
+    this.getPokemon("pikachu");
   }
 
   getPokemon(searchName: string) {
