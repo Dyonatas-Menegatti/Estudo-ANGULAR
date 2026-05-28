@@ -1,0 +1,51 @@
+<div class="login-container">
+
+  <div class="login-card">
+
+    <h1>Login</h1>
+
+    <p>
+      Acesse o sistema para visualizar as páginas protegidas
+      pela autenticação utilizando Guards no Angular.
+    </p>
+
+    <form (ngSubmit)="logar()">
+
+      <div class="input-group">
+        <label>E-mail</label>
+        <input
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+        />
+      </div>
+
+      <div class="input-group">
+        <label>Senha</label>
+        <input
+          type="password"
+          [(ngModel)]="senha"
+          name="senha"
+          placeholder="Digite sua senha"
+        />
+      </div>
+
+      <button type="submit">
+        Entrar
+      </button>
+
+    </form>
+
+    <div class="info">
+
+      <p>
+        Esta autenticação é apenas demonstrativa utilizando
+        localStorage para fins de estudo.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
