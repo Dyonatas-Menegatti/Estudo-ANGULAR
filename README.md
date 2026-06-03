@@ -137,7 +137,7 @@ Busco minha primeira oportunidade como Desenvolvedor Front-End para aplicar meus
 
 ## 📫 Contato
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dyonatas%20Menegatti-blue?style=for-the-badge&logo=linkedin)](SEU_LINKEDIN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dyonatas%20Menegatti-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dyonatas-menegatti/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Dyonatas--Menegatti-black?style=for-the-badge&logo=github)](https://github.com/Dyonatas-Menegatti)
 
